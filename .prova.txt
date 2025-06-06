@@ -1,0 +1,30 @@
+Prova:
+Desenvolver uma aplicação em ReactJS com duas rotas principais, que consuma dados da API pública JSONPlaceholder.
+https://jsonplaceholder.typicode.com/
+
+
+✅ Critérios de Aceite:
+Rotas da Aplicação
+- Commits (seguindo a Conventional Commits) -5 pontos
+- Arquitetura-  5 pontos
+- Funcionamento das paginas das rotas: /post e /dados. (funcionalidade) -15 pontos
+- Deploy - 2 pontos
+-  Layout tela - 3 pontos
+Rota /post
+Deve realizar uma requisição GET para uma API https://jsonplaceholder.typicode.com/.
+Uma lista de Post deve ser exibida na interface da aplicação, na rota POST.
+
+Ao clicar em um Post da lista, a aplicação deve abrir uma nova aba para a rota /dados, incluindo o identificador do post (ex: id) como parâmetro na URL (ex: /dados/123).
+Ou seja, caso click no 1 vai carregar na rota dados, os dados do primeiro, caso click no segundo os dados do segundo.....
+Rota /dados/id
+
+Deve extrair o parâmetro da URL (id) ao carregar a rota.
+Deve realizar uma nova requisição GET para a API para buscar os dados detalhados do post com base no id fornecido.
+
+Os dados detalhados do usuário devem ser exibidos na interface.
+
+
+🛠 Tecnologias Utilizadas:
+ReactJS – para construção da interface da aplicação SPA (Single Page Application).
+
+Material UI (MUI) – para os componentes visuais e estilização da aplicação.
