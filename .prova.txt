@@ -28,3 +28,13 @@ Os dados detalhados do usuário devem ser exibidos na interface.
 ReactJS – para construção da interface da aplicação SPA (Single Page Application).
 
 Material UI (MUI) – para os componentes visuais e estilização da aplicação.
+
+-----------------------------------
+
+feat: Nova funcionalidade
+fix: Correção de bug
+docs: Alterações na documentação
+style: Mudanças visuais (espaços, vírgulas etc.)
+refactor: Refatoração de código (sem mudar comportamento)
+test: Adição ou modificação de testes
+chore: Tarefas de manutenção (build, deps, etc)
