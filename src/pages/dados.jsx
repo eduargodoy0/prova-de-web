@@ -17,7 +17,7 @@ function Dados() {
     getApi(); // chama a função quando carrega a página
   }, [id]);
 
-  // se ainda não carregou, mostra essa mensagem
+  // se ainda não carregou, mostra essa mensagem. Pois se for algo diferente do post aparece carregando
   if (!post) 
     return <p>Carregando</p>;
 
