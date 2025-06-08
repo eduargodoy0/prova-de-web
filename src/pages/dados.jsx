@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function Dados() {
-  const { id } = useParams(); // pega o id da url
+  const {id} = useParams(); // pega o id da url
   const [post, setPost] = useState(null); // armazena o post
 
   // quando a página abrir, busca os dados do post pelo id
