@@ -6,7 +6,7 @@ import Rotas from './routes';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Rotas />
+      <Rotas/>
     </BrowserRouter>
   </React.StrictMode>
 );
