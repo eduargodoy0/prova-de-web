@@ -10,7 +10,7 @@ function Dados() {
     function getApi() {
       // faz a requisição GET
       fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then((res) => res.json())
+        .then((response) => response.json())
         .then((data) => setPost(data));
     }
 
