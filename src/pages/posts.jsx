@@ -6,12 +6,12 @@ function Posts() {
   const navigate = useNavigate(); // hook de navegação
 
   // quando a página abrir, busca os dados do post
-  useEffect(() => {
+  useEffect(() => { // useeffect é um hook do react para carregar automaticamente
     function getApi() {
       // faz a requisição GET
       fetch('https://jsonplaceholder.typicode.com/posts')
         .then(res => res.json())
-        .then(data => setPost(data));
+        .then(data => setPost(data)); 
     }
 
     getApi(); // chama a função quando carrega a página
