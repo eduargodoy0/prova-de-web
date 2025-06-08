@@ -11,8 +11,8 @@ function Dados() {
     function getApi() {
       // faz a requisição GET
       fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then((response) => response.json())
-        .then((data) => setPost(data));
+        .then(response => response.json())
+        .then(data => setPost(data));
     }
 
     getApi(); // chama a função quando carrega a página
