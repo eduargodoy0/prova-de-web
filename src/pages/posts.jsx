@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Typography } from '@mui/material';
 
 function Posts() {
   const [post, setPost] = useState([]); // armazena o post
@@ -22,15 +23,17 @@ function Posts() {
   };
 
   return (
-    <div>
-      <h1>Lista de Posts</h1>
+    <div style={{marginLeft: '8px'}}>
+      <Typography variant='h4' style={{marginTop: '20px', marginBottom: '20px', fontWeight: 'bold'}}>Lista de Posts</Typography>
       {post.map(post => ( // o .map vai percorrer pelos itens desse array, nesse caso os posts, pra cada post tera uma div
+       <Typography variant='body1' style={{marginTop: '4px'}}>
         <div
           key={post.id} // chave unica para cada post
           onClick={() => handleClick(post.id)} // ao clicar em um post, chama a função, que irá navegar para a rota dados
         >
           {post.title}
         </div>
+       </Typography>
       ))}
     </div>
   );
