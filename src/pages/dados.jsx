@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function Dados() {
-  const {id} = useParams(); // pega o id da url
+  const { id } = useParams(); // pega o id da url
   const [post, setPost] = useState(null); // armazena o post
 
   // quando a página abrir, busca os dados do post pelo id
@@ -10,8 +10,8 @@ function Dados() {
     function getApi() {
       // faz a requisição GET
       fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then(res => res.json())
-        .then(data => setPost(data));
+        .then((res) => res.json())
+        .then((data) => setPost(data));
     }
 
     getApi(); // chama a função quando carrega a página
