@@ -23,7 +23,7 @@ function Posts() {
   };
 
   return (
-    <div style={{marginLeft: '8px'}}>
+    <div style={{marginLeft: '16px'}}>
       <Typography variant='h4' style={{marginTop: '20px', marginBottom: '20px', fontWeight: 'bold'}}>Lista de Posts</Typography>
       {post.map(post => ( // o .map vai percorrer pelos itens desse array, nesse caso os posts, pra cada post tera uma div
        <Typography variant='body1' style={{marginTop: '4px'}}>
