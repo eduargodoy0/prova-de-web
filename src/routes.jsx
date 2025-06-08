@@ -6,9 +6,9 @@ import Posts from './pages/posts.jsx';
 function Rotas() {
   return (
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/posts" element={<Posts />} />
-      <Route path="/dados/:id" element={<Dados />} />
+      <Route path="/" element={<App/>} />
+      <Route path="/posts" element={<Posts/>} />
+      <Route path="/dados/:id" element={<Dados/>} />
     </Routes>
   );
 }
